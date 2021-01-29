@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="practicas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="alumno">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="nif"/>
+              <xs:element type="xs:string" name="resultado"/>
+              <xs:element name="observaciones">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="anhos"/>
+                    <xs:element type="xs:string" name="poblacion"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="ip"/>
+              <xs:element type="xs:string" name="mac"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+
