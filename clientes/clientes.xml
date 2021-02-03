@@ -1,0 +1,30 @@
+<clientes>
+    <sede>
+        <codigosede>Q78945612</codigosede>
+        <empleado>Manolo Hinojo</empleado>
+        <fecha>14/11/2019</fecha>
+        <descripcion>solvente</descripcion>
+        <cliente>
+            <direccion>C/Vapabajo nº 11</direccion>
+            <codigocliente>AAA-111</codigocliente>
+            <numeroviviendas>2</numeroviviendas>
+            <coste>5000</coste>
+            <resumen>"Inserte descripción"</resumen>
+            <plazo>20/06/2020</plazo>
+        </cliente>
+    </sede>
+    <sede>
+        <direccion>C/Empinao nº 5</direccion>
+        <codigosede>K34565432</codigosede>
+        <empleado>Juan Gómez</empleado>
+        <fecha>20/04/2018</fecha>
+        <descripcion>insolvente</descripcion>
+        <cliente>
+            <codigocliente>ABC-341</codigocliente>
+            <numeroviviendas>1</numeroviviendas>
+            <coste>3000</coste>
+            <resumen>"Inserte descripción"</resumen>
+            <plazo>14/3/2020</plazo>
+        </cliente>
+    </sede>
+</clientes>
