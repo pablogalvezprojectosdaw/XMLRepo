@@ -5,7 +5,7 @@
             <xs:sequence>
                 <xs:element name="sede">
                     <xs:simpleType>
-                        <xs:attribute name = "codigo">
+                        <xs:attribute name = "codigo"/>
                             <xs:complexType>
                                 <xs:sequence>
                                     <xs:element type="xs:string" name="direccion" />
@@ -13,19 +13,21 @@
                                     <xs:element type="xs:date" name="fecha"/>
                                     <xs:element type="xs:string" name="descripcion"/>
                                     <xs:element name="cliente">
-                                        <xs:complexType>
-                                            <xs:sequence>
-                                                <xs:element type="xs:string" name="direccion" />
-                                                <xs:element type="xs:byte" name="numeroviviendas"/>
-                                                <xs:element type="xs:short" name="coste"/>
-                                                <xs:element type="xs:string" name="resumen"/>
-                                                <xs:element type="xs:date" name="plazo"/>
-                                            </xs:sequence>
-                                        </xs:complexType>
+                                        <xs:simpleType>
+                                            <xs:attribute name = "codigo"/>
+                                                <xs:complexType>
+                                                    <xs:sequence>
+                                                        <xs:element type="xs:string" name="direccion" />
+                                                        <xs:element type="xs:byte" name="numeroviviendas"/>
+                                                        <xs:element type="xs:short" name="coste"/>
+                                                        <xs:element type="xs:string" name="resumen"/>
+                                                        <xs:element type="xs:date" name="plazo"/>
+                                                    </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:simpleType>
                                     </xs:element>
                                 </xs:sequence>
                             <xs:complexType>
-                        </xs:attribute>
                     </xs:simpleType>
                 </xs:element>
             </xs:sequence>
