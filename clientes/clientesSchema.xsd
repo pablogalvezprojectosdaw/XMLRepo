@@ -23,7 +23,7 @@
                                                         <xs:element type="xs:string" name="resumen"/>
                                                         <xs:element type="xs:date" name="plazo"/>
                                                     </xs:sequence>
-                                            </xs:complexType>
+                                                </xs:complexType>
                                         </xs:simpleType>
                                     </xs:element>
                                 </xs:sequence>
