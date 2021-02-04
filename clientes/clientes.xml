@@ -2,14 +2,13 @@
 
 
 
-<clientes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="clientesSchema.xsd">
+<clientes>
     <sede codigo = "Q78945612">
         <empleado>Manolo Hinojo</empleado>
         <fecha>14/11/2019</fecha>
         <descripcion>solvente</descripcion>
-        <cliente>
+        <cliente codigo = "AAA-111">
             <direccion>C/Vapabajo nº 11</direccion>
-            <codigocliente>AAA-111</codigocliente>
             <numeroviviendas>2</numeroviviendas>
             <coste>5000</coste>
             <resumen>"Inserte descripción"</resumen>
@@ -21,8 +20,7 @@
         <empleado>Juan Gómez</empleado>
         <fecha>20/04/2018</fecha>
         <descripcion>insolvente</descripcion>
-        <cliente>
-            <codigocliente>ABC-341</codigocliente>
+        <cliente codigo = "ABC-431">
             <numeroviviendas>1</numeroviviendas>
             <coste>3000</coste>
             <resumen>"Inserte descripción"</resumen>

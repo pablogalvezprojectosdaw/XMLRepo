@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE clientes
-[
-<!ELEMENT clientes (sede)*>
-<!ELEMENT sede (codigosede|empleado|fecha|descripcion|cliente|direccion)*>
-<!ELEMENT codigosede (#PCDATA)>
-<!ELEMENT empleado (#PCDATA)>
-<!ELEMENT fecha (#PCDATA)>
-<!ELEMENT descripcion (#PCDATA)>
-<!ELEMENT cliente (direccion|codigocliente|numeroviviendas|coste|resumen|plazo)*>
-<!ELEMENT direccion (#PCDATA)>
-<!ELEMENT codigocliente (#PCDATA)>
-<!ELEMENT numeroviviendas (#PCDATA)>
-<!ELEMENT coste (#PCDATA)>
-<!ELEMENT resumen (#PCDATA)>
-<!ELEMENT plazo (#PCDATA)>
-]>
 
 
-<clientes>
+
+<clientes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="clientesSchema.xsd">
     <sede codigo = "Q78945612">
         <empleado>Manolo Hinojo</empleado>
         <fecha>14/11/2019</fecha>
