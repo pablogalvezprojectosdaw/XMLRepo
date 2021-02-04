@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!DOCTYPE BDsms
+<!DOCTYPE concesionario
 [
 <!ELEMENT concesionario (coche)*>
 <!ELEMENT coche (codcoche|marca|modelo|matricula|caballos|plazas|puertas)*>
@@ -11,7 +11,7 @@
 <!ELEMENT caballos (#PCDATA)>
 <!ELEMENT plazas (#PCDATA)>
 <!ELEMENT puertas (#PCDATA)>
-]
+]>
 
 <concesionario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="concesionarioSchema.xsd">
     <coche>

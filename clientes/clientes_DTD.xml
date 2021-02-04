@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE clientes
+[
+<!ELEMENT clientes (sede)*>
+<!ELEMENT sede (codigosede|empleado|fecha|descripcion|cliente|direccion)*>
+<!ELEMENT codigosede (#PCDATA)>
+<!ELEMENT empleado (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT cliente (direccion|codigocliente|numeroviviendas|coste|resumen|plazo)*>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT codigocliente (#PCDATA)>
+<!ELEMENT numeroviviendas (#PCDATA)>
+<!ELEMENT coste (#PCDATA)>
+<!ELEMENT resumen (#PCDATA)>
+<!ELEMENT plazo (#PCDATA)>
+]>
 
 
-
-<clientes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="clientesSchema.xsd">
-    <sede codigo = "Q78945612">
+<clientes>
+    <sede>
+        <codigosede>Q78945612</codigosede>
         <empleado>Manolo Hinojo</empleado>
         <fecha>14/11/2019</fecha>
         <descripcion>solvente</descripcion>
@@ -16,8 +32,9 @@
             <plazo>20/06/2020</plazo>
         </cliente>
     </sede>
-    <sede codigo ="K34565432">
+    <sede>
         <direccion>C/Empinao nº 5</direccion>
+        <codigosede>K34565432</codigosede>
         <empleado>Juan Gómez</empleado>
         <fecha>20/04/2018</fecha>
         <descripcion>insolvente</descripcion>
