@@ -1,30 +1,33 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-
-
-<clientes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="clientesSchema.xsd">
-    <sede codigo = "Q78945612">
-        <empleado>Manolo Hinojo</empleado>
-        <fecha>14/11/2019</fecha>
-        <descripcion>solvente</descripcion>
-        <cliente codigo = "AAA-111">
-            <direccion>C/Vapabajo nº 11</direccion>
-            <numeroviviendas>2</numeroviviendas>
-            <coste>5000</coste>
-            <resumen>"Inserte descripción"</resumen>
-            <plazo>20/06/2020</plazo>
-        </cliente>
-    </sede>
-    <sede codigo ="K34565432">
-        <direccion>C/Empinao nº 5</direccion>
-        <empleado>Juan Gómez</empleado>
-        <fecha>20/04/2018</fecha>
-        <descripcion>insolvente</descripcion>
-        <cliente codigo = "ABC-431">
-            <numeroviviendas>1</numeroviviendas>
-            <coste>3000</coste>
-            <resumen>"Inserte descripción"</resumen>
-            <plazo>14/3/2020</plazo>
-        </cliente>
-    </sede>
-</clientes>
+<?xml version="1.0" encoding="UTF-8"?>
+<clientes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="clientes.xsd">
+            <sede codigo="A0000001">
+            <direccion>C/Castilla, 1</direccion>
+            <direccion>C/Castilla, 1</direccion>
+            <empleado>José luis Comesaña</empleado>
+            <fecha>12-01-2012</fecha>
+            <descripcion>Urgente</descripcion>
+            <cliente codigo="AAA-111">
+                <numero>12</numero>
+                <coste>100</coste>
+                <resumen>Producto muy frágil</resumen>
+                <plazo>10</plazo>
+            </cliente>
+            <cliente codigo="AAA-112">
+                <numero>10</numero>
+                <coste>10</coste>
+                <resumen>No apilar más de cinco paquetes</resumen>
+                <plazo>8</plazo>
+            </cliente>
+        </sede>
+        <sede codigo="B00000002">
+            <direccion>Avda. Gran Vía s/n</direccion>
+            <empleado>Antonio Resines</empleado>
+            <fecha>10-02-2012</fecha>
+            <cliente codigo="ABC-001">
+                <numero>5</numero>
+                <coste>50</coste>
+                <resumen />
+                <plazo>3</plazo>
+            </cliente>
+        </sede>
+    </clientes>

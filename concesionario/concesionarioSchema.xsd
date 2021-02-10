@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="0.1" xml:lang="es">
-    <xs:element name="concesionario">
+    <xs:element name="Concesionario">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="coche">
+                <xs:element name="coche" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="codcoche" type="xs:string"/>
-                            <xs:element name="marca" type="xs:string"/>
-                            <xs:element name="modelo" type="xs:string"/>
-                            <xs:element name="matricula" type="xs:string"/>
-                            <xs:element name="caballos" type="xs:string"/>
-                            <xs:element name="plazas" type="xs:string"/>
-                            <xs:element name="puertas" type="xs:string"/>
+                            <xs:element name="codigo" type="xs:integer" />
+                            <xs:element name="marca" type="xs:string" />
+                            <xs:element name="modelo" type="xs:string" />
+                            <xs:element name="matricula" type="xs:string" />
+                            <xs:element name="potencia" type="xs:decimal" />
+                            <xs:element name="plazas" type="xs:integer" />
+                            <xs:element name="numPuertas" type="xs:integer" />
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>

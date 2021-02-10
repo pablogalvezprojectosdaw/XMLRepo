@@ -1,42 +1,6 @@
-<?xml version='1.0' encoding='UTF-8'?>
-
-<!--
-    TODO define vocabulary identification
-    PUBLIC ID: -//vendor//vocabulary//EN
-    SYSTEM ID: http://server/path/BDsms.dtd
-
--->
-
-<!--
-    An example how to use this DTD from your XML document:
-
-    <?xml version="1.0"?>
-
-    <!DOCTYPE BDsms SYSTEM "BDsms.dtd">
-
-    <BDsms>
-    ...
-    </BDsms>
--->
-
-<!--- Put your DTDDoc comment here. -->
-<!ELEMENT BDsms (sms)*>
-<!ATTLIST BDsms
-    xsi:noNamespaceSchemaLocation CDATA #IMPLIED
-    xmlns:xsi CDATA #IMPLIED
-  >
-
-<!--- Put your DTDDoc comment here. -->
-<!ELEMENT sms (telefono|fecha|hora|mensaje)*>
-
-<!--- Put your DTDDoc comment here. -->
+<!ELEMENT BDsms (sms*)>
+<!ELEMENT sms (telefono,fecha,hora,mensaje)>
 <!ELEMENT telefono (#PCDATA)>
-
-<!--- Put your DTDDoc comment here. -->
 <!ELEMENT fecha (#PCDATA)>
-
-<!--- Put your DTDDoc comment here. -->
 <!ELEMENT hora (#PCDATA)>
-
-<!--- Put your DTDDoc comment here. -->
 <!ELEMENT mensaje (#PCDATA)>

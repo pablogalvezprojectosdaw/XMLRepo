@@ -1,59 +1,42 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-
-<!DOCTYPE concesionario
-[
-<!ELEMENT concesionario (coche)*>
-<!ELEMENT coche (codcoche|marca|modelo|matricula|caballos|plazas|puertas)*>
-<!ELEMENT codcoche (#PCDATA)>
+<!DOCTYPE Concesionario [
+<!ELEMENT Concesionario (coche*)>
+<!ELEMENT coche (codigo, marca, modelo, matricula, potencia, plazas,
+numPuertas )>
+<!ELEMENT codigo (#PCDATA)>
 <!ELEMENT marca (#PCDATA)>
 <!ELEMENT modelo (#PCDATA)>
 <!ELEMENT matricula (#PCDATA)>
-<!ELEMENT caballos (#PCDATA)>
+<!ELEMENT potencia (#PCDATA)>
 <!ELEMENT plazas (#PCDATA)>
-<!ELEMENT puertas (#PCDATA)>
+<!ELEMENT numPuertas (#PCDATA)>
 ]>
-
-<concesionario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="concesionarioSchema.xsd">
-    <coche>
-        <codcoche>12345</codcoche>
-        <marca>Chevrolet</marca>
-        <modelo>Camaro</modelo>
-        <matricula>1234LOC</matricula>
-        <caballos>20</caballos>
-        <plazas>5</plazas>
-        <puertas>5</puertas>
-    </coche>
-
-    <coche>
-        <codcoche>54321</codcoche>
-        <marca>Opel</marca>
-        <modelo>Corsa</modelo>
-        <matricula>5432WWW</matricula>
-        <caballos>50</caballos>
-        <plazas>5</plazas>
-        <puertas>5</puertas>
-    </coche>
-
-    <coche>
-        <codcoche>69347</codcoche>
-        <marca>Audi</marca>
-        <modelo>A5</modelo>
-        <matricula>4563TYG</matricula>
-        <caballos>70</caballos>
-        <plazas>6</plazas>
-        <puertas>5</puertas>
-    </coche>
-
-    <coche>
-        <codcoche>11111</codcoche>
-        <marca>Volkswagen</marca>
-        <modelo>T-ROC</modelo>
-        <matricula>4444PRA</matricula>
-        <caballos>69</caballos>
-        <plazas>5</plazas>
-        <puertas>5</puertas>
-    </coche>
-
-
-
-</concesionario>
+<Concesionario>
+<coche>
+    <codigo>1</codigo>
+    <marca>SEAT</marca>
+    <modelo>Leon</modelo>
+    <matricula>1234-BBB</matricula>
+    <potencia>130</potencia>
+    <plazas>5</plazas>
+    <numPuertas>5</numPuertas>
+</coche>
+<coche>
+    <codigo>2</codigo>
+    <marca>BMW</marca>
+    <modelo>Serie 1</modelo>
+    <matricula>5678-CCC</matricula>
+    <potencia>150</potencia>
+    <plazas>4</plazas>
+    <numPuertas>3</numPuertas>
+</coche>
+<coche>
+<codigo>3</codigo>
+<marca>Peugeot</marca>
+<modelo>406</modelo>
+<matricula>9067-DYC</matricula>
+<potencia>90</potencia>
+<plazas>5</plazas>
+<numPuertas>4</numPuertas>
+</coche>
+</Concesionario>
